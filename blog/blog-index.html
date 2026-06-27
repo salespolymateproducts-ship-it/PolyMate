@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>บทความ | Polymate Products — ความรู้เรื่องพลาสติกและการผลิต</title>
+<meta name="description" content="บทความความรู้เรื่องการฉีดพลาสติก เปิดแม่พิมพ์ OEM และการสั่งผลิตชิ้นงานพลาสติก โดย Polymate Products โรงงานรับฉีดพลาสติก ราชบุรี">
+<meta name="robots" content="index, follow">
+
+<meta property="og:title" content="บทความ | Polymate Products">
+<meta property="og:description" content="ความรู้เรื่องการฉีดพลาสติก เปิดแม่พิมพ์ และการสั่งผลิต OEM">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.polymateproducts.com/blog/">
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Sarabun:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --blue: #1B3A7A;
+  --blue-light: #2650A8;
+  --green: #4A8B2A;
+  --green-light: #5CAF33;
+  --white: #ffffff;
+  --gray-light: #f4f6fa;
+  --gray: #e8ecf2;
+  --text: #1a1a2e;
+  --text-muted: #5a6a7e;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { font-family: 'Sarabun', sans-serif; color: var(--text); background: var(--white); }
+
+/* NAV */
+nav {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+  background: rgba(255,255,255,0.97);
+  border-bottom: 2px solid var(--gray);
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 0 5%; height: 72px;
+  backdrop-filter: blur(8px);
+}
+.nav-brand-name {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800; font-size: 16px; color: var(--blue); text-decoration: none;
+}
+.nav-brand-name em { color: var(--green); font-style: normal; }
+.nav-links { display: flex; gap: 28px; list-style: none; }
+.nav-links a {
+  font-size: 14px; font-weight: 500; color: var(--text-muted);
+  text-decoration: none; transition: color .2s;
+  padding-bottom: 2px; border-bottom: 2px solid transparent;
+}
+.nav-links a:hover, .nav-links a.active { color: var(--blue); border-color: var(--green); }
+.nav-cta {
+  background: var(--blue); color: white;
+  border: none; padding: 10px 22px; border-radius: 6px;
+  font-size: 14px; font-weight: 600; cursor: pointer;
+  font-family: 'Sarabun', sans-serif; text-decoration: none;
+  transition: background .2s;
+}
+.nav-cta:hover { background: var(--green); }
+
+/* HERO */
+.blog-hero {
+  background: linear-gradient(135deg, var(--blue) 0%, #0f2456 60%, #0a1a3a 100%);
+  padding: 120px 5% 64px; position: relative; overflow: hidden;
+}
+.blog-hero::after {
+  content: '';
+  position: absolute; bottom: 0; left: 0; right: 0; height: 4px;
+  background: linear-gradient(90deg, var(--green), var(--green-light), var(--blue-light));
+}
+.blog-hero-inner { max-width: 700px; margin: 0 auto; text-align: center; position: relative; z-index: 2; }
+.blog-hero-label {
+  display: inline-flex; align-items: center; gap: 8px;
+  background: rgba(74,139,42,0.2); border: 1px solid rgba(92,175,51,0.4);
+  color: #8fd96a; padding: 6px 16px; border-radius: 99px;
+  font-size: 13px; font-weight: 500; letter-spacing: 1px; margin-bottom: 24px;
+}
+.blog-hero h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: clamp(28px, 4vw, 46px); font-weight: 800;
+  color: white; line-height: 1.2; margin-bottom: 16px;
+}
+.blog-hero h1 em { color: var(--green-light); font-style: normal; }
+.blog-hero p { color: rgba(255,255,255,0.65); font-size: 17px; line-height: 1.7; }
+
+/* BREADCRUMB */
+.breadcrumb {
+  max-width: 1100px; margin: 0 auto;
+  padding: 20px 5% 0; font-size: 13px; color: var(--text-muted);
+}
+.breadcrumb a { color: var(--text-muted); text-decoration: none; }
+.breadcrumb a:hover { color: var(--blue); }
+.breadcrumb span { margin: 0 6px; }
+
+/* MAIN */
+.blog-main { max-width: 1100px; margin: 0 auto; padding: 48px 5% 80px; }
+
+/* FEATURED */
+.featured-article {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 0;
+  border-radius: 18px; overflow: hidden;
+  border: 2px solid var(--gray); margin-bottom: 48px;
+  text-decoration: none; color: inherit;
+  transition: box-shadow .2s, transform .2s;
+}
+.featured-article:hover { box-shadow: 0 12px 40px rgba(27,58,122,0.12); transform: translateY(-3px); }
+@media (max-width: 700px) { .featured-article { grid-template-columns: 1fr; } }
+.featured-visual {
+  background: linear-gradient(135deg, var(--blue), #0f2456);
+  padding: 48px 40px; display: flex; flex-direction: column; justify-content: center;
+  position: relative; overflow: hidden;
+}
+.featured-visual::before {
+  content: '📦';
+  position: absolute; right: -10px; bottom: -10px;
+  font-size: 120px; opacity: 0.1;
+}
+.featured-badge {
+  display: inline-block; background: rgba(92,175,51,0.2); border: 1px solid rgba(92,175,51,0.4);
+  color: #8fd96a; padding: 4px 12px; border-radius: 99px;
+  font-size: 12px; font-weight: 600; letter-spacing: 1px; margin-bottom: 16px;
+  width: fit-content;
+}
+.featured-visual h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: clamp(20px, 2.5vw, 28px); font-weight: 800;
+  color: white; line-height: 1.3;
+}
+.featured-visual h2 em { color: var(--green-light); font-style: normal; }
+.featured-body { padding: 40px; display: flex; flex-direction: column; justify-content: center; }
+.featured-body p { color: var(--text-muted); font-size: 15px; line-height: 1.7; margin-bottom: 24px; }
+.featured-meta { display: flex; gap: 16px; font-size: 13px; color: var(--text-muted); margin-bottom: 20px; flex-wrap: wrap; }
+.read-btn {
+  display: inline-flex; align-items: center; gap: 8px;
+  background: var(--blue); color: white;
+  padding: 12px 24px; border-radius: 8px;
+  font-weight: 700; font-size: 14px;
+  font-family: 'Montserrat', sans-serif;
+  width: fit-content; transition: background .2s;
+}
+.featured-article:hover .read-btn { background: var(--green); }
+
+/* ARTICLE GRID */
+.section-label-sm {
+  font-size: 12px; font-weight: 700; color: var(--green);
+  letter-spacing: 2px; text-transform: uppercase; margin-bottom: 20px;
+}
+.articles-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 24px; }
+
+.article-card {
+  border-radius: 14px; border: 2px solid var(--gray);
+  overflow: hidden; text-decoration: none; color: inherit;
+  display: flex; flex-direction: column;
+  transition: box-shadow .2s, transform .2s, border-color .2s;
+}
+.article-card:hover { box-shadow: 0 8px 30px rgba(27,58,122,0.1); transform: translateY(-3px); border-color: var(--blue); }
+
+.card-visual {
+  padding: 32px 28px 24px;
+  display: flex; flex-direction: column; gap: 12px;
+  position: relative; overflow: hidden;
+}
+.card-visual.v1 { background: linear-gradient(135deg, #0f2456, var(--blue-light)); }
+.card-visual.v2 { background: linear-gradient(135deg, #1a3a20, var(--green)); }
+
+.card-visual::before {
+  position: absolute; right: 12px; bottom: -8px;
+  font-size: 80px; opacity: 0.12;
+}
+.card-visual.v1::before { content: '🔧'; }
+.card-visual.v2::before { content: '⚖️'; }
+
+.card-badge {
+  display: inline-block; font-size: 11px; font-weight: 700;
+  padding: 3px 10px; border-radius: 99px; letter-spacing: 0.5px;
+  width: fit-content; text-transform: uppercase;
+}
+.v1 .card-badge { background: rgba(255,255,255,0.15); color: rgba(255,255,255,0.8); }
+.v2 .card-badge { background: rgba(255,255,255,0.15); color: rgba(255,255,255,0.8); }
+
+.card-visual h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px; font-weight: 800; color: white; line-height: 1.3;
+  position: relative; z-index: 2;
+}
+.card-visual h3 em { color: var(--green-light); font-style: normal; }
+.v2 .card-visual h3 em { color: #a8e87a; }
+
+.card-body { padding: 24px 28px; flex: 1; display: flex; flex-direction: column; }
+.card-meta { display: flex; gap: 14px; font-size: 12px; color: var(--text-muted); margin-bottom: 12px; }
+.card-body p { font-size: 14px; color: var(--text-muted); line-height: 1.7; flex: 1; margin-bottom: 20px; }
+.card-read {
+  display: inline-flex; align-items: center; gap: 6px;
+  font-size: 14px; font-weight: 700; color: var(--blue);
+  font-family: 'Montserrat', sans-serif;
+}
+.article-card:hover .card-read { color: var(--green); }
+.card-read::after { content: '→'; transition: transform .2s; }
+.article-card:hover .card-read::after { transform: translateX(4px); }
+
+/* CTA SECTION */
+.blog-cta {
+  background: linear-gradient(135deg, var(--blue), var(--blue-light));
+  border-radius: 18px; padding: 48px; margin-top: 64px; text-align: center;
+}
+.blog-cta h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 26px; font-weight: 800; color: white; margin-bottom: 12px;
+}
+.blog-cta p { color: rgba(255,255,255,0.75); margin-bottom: 28px; font-size: 16px; }
+.cta-btns { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
+.cta-btn-primary {
+  background: var(--green); color: white;
+  padding: 13px 32px; border-radius: 8px;
+  font-weight: 700; font-size: 15px; text-decoration: none;
+  font-family: 'Montserrat', sans-serif; transition: background .2s, transform .15s;
+}
+.cta-btn-primary:hover { background: var(--green-light); transform: translateY(-2px); }
+.cta-btn-secondary {
+  background: rgba(255,255,255,0.1); color: white; border: 1.5px solid rgba(255,255,255,0.3);
+  padding: 13px 32px; border-radius: 8px;
+  font-weight: 700; font-size: 15px; text-decoration: none;
+  font-family: 'Montserrat', sans-serif; transition: background .2s;
+}
+.cta-btn-secondary:hover { background: rgba(255,255,255,0.2); }
+
+footer {
+  background: var(--blue); color: rgba(255,255,255,0.6);
+  text-align: center; padding: 32px 5%; font-size: 14px; margin-top: 0;
+}
+footer a { color: var(--green-light); text-decoration: none; }
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="../index.html" class="nav-brand-name">POLY<em>MATE</em> PRODUCTS</a>
+  <ul class="nav-links">
+    <li><a href="../index.html#services">บริการ</a></li>
+    <li><a href="../index.html#products">สินค้า</a></li>
+    <li><a href="../index.html#oem">OEM</a></li>
+    <li><a href="../index.html#about">เกี่ยวกับเรา</a></li>
+    <li><a href="../index.html#contact">ติดต่อ</a></li>
+    <li><a href="index.html" class="active">บทความ</a></li>
+  </ul>
+  <a href="../index.html#contact" class="nav-cta">ติดต่อเรา</a>
+</nav>
+
+<div class="blog-hero">
+  <div class="blog-hero-inner">
+    <div class="blog-hero-label">📚 คลังความรู้</div>
+    <h1>บทความ<em>ความรู้</em><br>เรื่องพลาสติก</h1>
+    <p>รวมความรู้เรื่องการฉีดพลาสติก เปิดแม่พิมพ์ และการสั่งผลิต OEM<br>จากทีมงานที่มีประสบการณ์กว่า 35 ปี</p>
+  </div>
+</div>
+
+<div class="breadcrumb">
+  <a href="../index.html">หน้าแรก</a>
+  <span>›</span>
+  บทความ
+</div>
+
+<div class="blog-main">
+
+  <!-- FEATURED -->
+  <a href="plastic-injection-moq.html" class="featured-article">
+    <div class="featured-visual">
+      <div class="featured-badge">⭐ บทความแนะนำ</div>
+      <h2>ฉีดพลาสติก<em>ขั้นต่ำกี่ชิ้น?</em><br>ทุกอย่างที่ต้องรู้<br>ก่อนสั่งผลิต</h2>
+    </div>
+    <div class="featured-body">
+      <div class="featured-meta">
+        <span>📅 2025</span>
+        <span>⏱ อ่าน 5 นาที</span>
+        <span>📦 คู่มือการผลิต</span>
+      </div>
+      <p>MOQ คืออะไร? ต้องสั่งขั้นต่ำกี่ชิ้น? ต้นทุนแม่พิมพ์คิดยังไง? บทความนี้อธิบายทุกอย่างที่ต้องรู้ก่อนสั่งผลิตชิ้นงานพลาสติกครั้งแรก พร้อมตารางเปรียบเทียบต้นทุนในแต่ละปริมาณ</p>
+      <div class="read-btn">อ่านบทความ →</div>
+    </div>
+  </a>
+
+  <!-- OTHER ARTICLES -->
+  <div class="section-label-sm">บทความทั้งหมด</div>
+  <div class="articles-grid">
+
+    <a href="mold-opening-cost.html" class="article-card">
+      <div class="card-visual v1">
+        <div class="card-badge">🔧 คู่มือการผลิต</div>
+        <h3>เปิดแม่พิมพ์พลาสติกใหม่<br><em>ขั้นตอนและราคา</em>เท่าไหร่?</h3>
+      </div>
+      <div class="card-body">
+        <div class="card-meta">
+          <span>📅 2025</span>
+          <span>⏱ อ่าน 6 นาที</span>
+        </div>
+        <p>ราคาแม่พิมพ์อยู่ที่เท่าไหร่? มีปัจจัยอะไรบ้างที่กำหนดราคา? และขั้นตอนตั้งแต่ส่งแบบจนได้ชิ้นงานใช้เวลากี่สัปดาห์?</p>
+        <div class="card-read">อ่านบทความ</div>
+      </div>
+    </a>
+
+    <a href="oem-vs-ready-made.html" class="article-card">
+      <div class="card-visual v2">
+        <div class="card-badge">⚖️ เปรียบเทียบตัวเลือก</div>
+        <h3>OEM พลาสติก vs<br>ซื้อสำเร็จรูป<br><em>เลือกแบบไหนดี?</em></h3>
+      </div>
+      <div class="card-body">
+        <div class="card-meta">
+          <span>📅 2025</span>
+          <span>⏱ อ่าน 5 นาที</span>
+        </div>
+        <p>เปรียบเทียบข้อดีข้อเสีย ต้นทุน และสถานการณ์ที่เหมาะสม พร้อมตัวช่วยตัดสินใจว่าธุรกิจของคุณควรเลือกแบบไหน</p>
+        <div class="card-read">อ่านบทความ</div>
+      </div>
+    </a>
+
+  </div>
+
+  <!-- CTA -->
+  <div class="blog-cta">
+    <h2>มีคำถามเรื่องการผลิต?</h2>
+    <p>ปรึกษาทีมงาน Polymate ฟรี ไม่มีข้อผูกมัด<br>บอกความต้องการแล้วเราจะแนะนำให้ตรงที่สุด</p>
+    <div class="cta-btns">
+      <a href="../index.html#contact" class="cta-btn-primary">ขอใบเสนอราคาฟรี</a>
+      <a href="tel:0981584185" class="cta-btn-secondary">📞 โทรหาเรา</a>
+    </div>
+  </div>
+
+</div>
+
+<footer>
+  <p>© 2025 <strong style="color:white">Polymate Products Co., Ltd.</strong> | อ.บ้านโป่ง ราชบุรี | <a href="tel:0981584185">098-158-4185</a> | <a href="../index.html">กลับหน้าแรก</a></p>
+</footer>
+
+</body>
+</html>
