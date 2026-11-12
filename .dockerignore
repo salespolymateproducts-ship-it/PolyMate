@@ -8,3 +8,13 @@ Dockerfile
 tools
 data
 node_modules
+
+# Internal / unused files: keep them out of the production image.
+# They stay in Git; only the Docker image excludes them.
+SEO.txt
+# NOTE: image-slot.js reads this sidecar at runtime, but only when a page contains <image-slot>.
+# No page does today. If <image-slot> is ever used again, REMOVE the next line so the state file ships.
+.image-slots.state.json
+debug-product-*.webp
+screenshots
+uploads
