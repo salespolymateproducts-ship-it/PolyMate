@@ -38,5 +38,10 @@ jobs:
           # อัปเดต Image ใหม่จาก Docker Hub
           sudo docker pull polymatepd/my-html-web:latest
           
-          # รีสตาร์ท Container เพื่อใช้ Image ตัวใหม่ (รันอยู่เบื้องหลัง)
-          sudo docker-compose up -d --force-recreate
+          # ลบ Container เดิมแล้วรันใหม่ด้วย Image ตัวใหม่
+          # nginx บนเครื่องรับพอร์ต 80 แล้วส่งต่อมาที่ 8080 จึงต้องใช้ 8080:80
+          sudo docker rm -f my-html-web || true
+          sudo docker run -d --name my-html-web --restart always -p 8080:80 polymatepd/my-html-web:latest
+
+          # ลบ Image เก่าที่ไม่ได้ใช้แล้ว
+          sudo docker image prune -f
