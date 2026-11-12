@@ -1,0 +1,107 @@
+{
+  "site": {
+    "url": "https://www.polymateproducts.com",
+    "name": "Polymate Products Co., Ltd.",
+    "brand": "PolyMate",
+    "phone": "098-158-4185",
+    "phoneHref": "tel:0981584185",
+    "email": "sales.polymateproducts@gmail.com",
+    "lineId": "@polymatepro",
+    "lineUrl": "https://line.me/ti/p/~@polymatepro",
+    "facebookUrl": "https://www.facebook.com/PolyMateProducts",
+    "address": {
+      "street": "12/13 หมู่ที่ 7 ต.หนองกบ อ.บ้านโป่ง",
+      "locality": "ราชบุรี",
+      "postalCode": "70110",
+      "country": "TH"
+    },
+    "geo": { "latitude": 13.8254, "longitude": 99.9253 }
+  },
+  "page": {
+    "title": "สินค้า ใบพัดลมพลาสติกและดุมล็อคใบพัดลม | Polymate Products ราชบุรี",
+    "description": "ใบพัดลมพลาสติก 16, 18 และ 20 นิ้ว และดุมล็อคใบพัดลม ผลิตจากแม่พิมพ์ของโรงงาน Polymate Products บ้านโป่ง ราชบุรี สอบถามราคาได้ทาง Line @polymatepro",
+    "h1": "สินค้าพลาสติกคุณภาพ",
+    "intro": "สินค้าที่ผลิตจากแม่พิมพ์ของเราเอง คุณภาพควบคุมจากโรงงาน ราคาส่งตรงถึงมือ"
+  },
+  "categories": [
+    { "id": "fan-blades", "name": "ใบพัดลม" },
+    { "id": "fan-accessories", "name": "อุปกรณ์เสริมพัดลม" }
+  ],
+  "products": [
+    {
+      "id": "fan-blade-16",
+      "name": "ใบพัดลม 16 นิ้ว",
+      "category": "fan-blades",
+      "images": [
+        { "src": "products/fan-16.png", "alt": "ใบพัดลมพลาสติก 16 นิ้ว ผลิตโดย PolyMate" }
+      ],
+      "features": [
+        "สี: ใส",
+        "รองรับแกนมอเตอร์ขนาด 8 mm.",
+        "ใช้ร่วมกับพัดลมได้หลากหลายรุ่น"
+      ],
+      "badge": "มีสต็อก"
+    },
+    {
+      "id": "fan-blade-18",
+      "name": "ใบพัดลม 18 นิ้ว",
+      "category": "fan-blades",
+      "images": [
+        { "src": "products/fan-18.png", "alt": "ใบพัดลมพลาสติก 18 นิ้ว ผลิตโดย PolyMate" }
+      ],
+      "features": [
+        "สี: ใส",
+        "รองรับแกนมอเตอร์ขนาด 8 / 9 mm.",
+        "ใช้ร่วมกับพัดลมได้หลากหลายรุ่น"
+      ],
+      "badge": "มีสต็อก"
+    },
+    {
+      "id": "fan-blade-18-5blade",
+      "name": "ใบพัดลม 18 นิ้ว (5 ใบพัด)",
+      "category": "fan-blades",
+      "images": [
+        { "src": "products/fan-18-5blade.png", "alt": "ใบพัดลมพลาสติก 18 นิ้ว 5 ใบพัด ผลิตโดยโรงงาน PolyMate" }
+      ],
+      "features": [
+        "สี: ดำ / เทา",
+        "รองรับแกนมอเตอร์ขนาด 8 / 9 / 10 มม.",
+        "ใช้ร่วมกับพัดลมได้หลากหลายรุ่น"
+      ],
+      "badge": "มีสต็อก"
+    },
+    {
+      "id": "fan-blade-20-5blade",
+      "name": "ใบพัดลม 20 นิ้ว (5 ใบพัด)",
+      "category": "fan-blades",
+      "images": [
+        { "src": "products/fan-20-5blade.png", "alt": "ใบพัดลมพลาสติก 20 นิ้ว 5 ใบพัด ผลิตโดยโรงงาน PolyMate" }
+      ],
+      "features": [
+        "สี: ใส",
+        "รองรับแกนมอเตอร์ขนาด 10 mm.",
+        "ใช้ร่วมกับพัดลมได้หลากหลายรุ่น"
+      ],
+      "badge": "มีสต็อก"
+    },
+    {
+      "id": "fan-lock-hub",
+      "name": "ดุมล็อคใบพัดลม",
+      "category": "fan-accessories",
+      "images": [
+        { "src": "products/fan-lock-hub.png", "alt": "ดุมล็อคใบพัดลมพลาสติก สีดำ สำหรับพัดลม Hatari และ Mitsubishi" }
+      ],
+      "features": [
+        "สี: ดำ",
+        "มีทั้งแบบเกลียว Hatari / Mitsubishi"
+      ],
+      "badge": "มีสต็อก"
+    }
+  ],
+  "comingSoon": {
+    "name": "สินค้าใหม่กำลังมา",
+    "image": { "src": "products/new-part.png", "alt": "ชิ้นงานพลาสติกฉีดขึ้นรูป OEM โดยโรงงาน PolyMate" },
+    "text": "เรากำลังลงทุนแม่พิมพ์ใหม่เพื่อขยายสินค้าในพอร์ต ติดตามได้เลย",
+    "badge": "เร็วๆ นี้"
+  }
+}

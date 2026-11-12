@@ -1,0 +1,10 @@
+# Dev-only files: keep them out of the nginx image (Dockerfile does COPY . )
+.git
+.github
+.claude
+.gitignore
+.dockerignore
+Dockerfile
+tools
+data
+node_modules

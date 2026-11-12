@@ -1,0 +1,12 @@
+{
+  "name": "polymate-tools",
+  "private": true,
+  "type": "module",
+  "description": "Build tools for polymateproducts.com (run: node tools/build-products.mjs)",
+  "scripts": {
+    "build": "node build-products.mjs"
+  },
+  "dependencies": {
+    "sharp": "^0.35.0"
+  }
+}
