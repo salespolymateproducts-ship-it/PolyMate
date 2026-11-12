@@ -8,6 +8,11 @@ RUN rm -rf /usr/share/nginx/html/*
 # ไปไว้ในโฟลเดอร์ที่ Nginx ใช้สำหรับเสิร์ฟหน้าเว็บ
 COPY . /usr/share/nginx/html
 
+# ใช้ nginx.conf ของเราแทน default.conf (ตั้ง absolute_redirect off เพื่อไม่ให้ redirect ตกไป HTTP)
+# แล้วลบสำเนาใน web root ออก ไม่ให้เว็บเสิร์ฟไฟล์ config ออกสู่สาธารณะ
+COPY nginx.conf /etc/nginx/conf.d/default.conf
+RUN rm -f /usr/share/nginx/html/nginx.conf
+
 # เปิดพอร์ต 80 เพื่อให้ภายนอกสามารถเข้ามาเชื่อมต่อได้
 EXPOSE 80
 
